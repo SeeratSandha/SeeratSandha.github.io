@@ -24,7 +24,7 @@
 
         header h1 {
             margin: 0;
-            font-size: 5em;
+            font-size: 3em;
         }
 
         header p {
@@ -83,29 +83,40 @@
         }
 
         /* Skills Section */
+        /* Skills Section */
         .skills-list {
             display: flex;
             justify-content: center;
             gap: 40px;
             flex-wrap: wrap;
             margin-top: 30px;
-        }
+}
 
         .skills-item {
             width: 120px;
             height: 120px;
             background-color: #ecf0f1;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+            text-align: center;
+            padding: 10px;
+}
 
         .skills-item i {
             font-size: 2.5em;
             color: #2c3e50;
-        }
+}
+
+        .skills-item span {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 10px;
+}    
 
         /* Contact Form */
         form {
@@ -178,7 +189,7 @@
         <div class="card-container">
             <!-- Project 1 -->
             <div class="card">
-                <img src="https://i.pinimg.com/736x/56/ac/2e/56ac2e293751c6a0759e74e8aa4fddac.jpg" alt="Project 1">
+                <img src="https://i.pinimg.com/originals/42/a0/04/42a0044db96096c0f44b7aa6b0968d46.jpg" alt="Project 1">
                 <div class="card-content">
                     <h3>Moodify-App</h3>
                     <p>This app is about logging the mood of people displaying emojis and storing the login moods in the History section.</p>
@@ -205,14 +216,26 @@
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skills-item"><i class="fas fa-html5"></i></div>
-            <div class="skills-item"><i class="fas fa-css3-alt"></i></div>
-            <div class="skills-item"><i class="fas fa-js-square"></i></div>
-            <div class="skills-item"><i class="fas fa-react"></i></div>
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <div class="skills-item">
+            <i class="fas fa-html5"></i>
+            <span>HTML</span>
         </div>
-    </section>
+        <div class="skills-item">
+            <i class="fas fa-css3-alt"></i>
+            <span>CSS</span>
+        </div>
+        <div class="skills-item">
+            <i class="fas fa-js-square"></i>
+            <span>JavaScript</span>
+        </div>
+        <div class="skills-item">
+            <i class="fas fa-react"></i>
+            <span>React</span>
+        </div>
+    </div>
+  </section>
 
     <!-- Contact Form Section -->
     <section id="contact">
