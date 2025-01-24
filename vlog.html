@@ -3,162 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Elegant Log</title>
+    <title>Your Creative Portfolio</title>
     <style>
-        /* General Reset */
-        * {
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #f7f7f7;
+            background-color: #f9f9f9;
             color: #333;
-            padding: 40px;
         }
 
+        /* Header */
         header {
+            background-color: #2c3e50;
+            color: white;
             text-align: center;
-            margin-bottom: 40px;
+            padding: 50px 0;
         }
 
         header h1 {
-            font-size: 3.5rem;
-            color: #2a3d66;
-            font-weight: 700;
-            margin-bottom: 10px;
+            margin: 0;
+            font-size: 3em;
         }
 
         header p {
-            font-size: 1.2rem;
-            color: #6c757d;
+            font-size: 1.2em;
+            margin-top: 10px;
         }
 
+        /* Section Layout */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* Card Styles */
         .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             gap: 30px;
-            justify-items: center;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .card {
+            width: 300px;
             background-color: #fff;
-            border-radius: 16px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            width: 100%;
-            max-width: 400px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
         }
 
         .card img {
             width: 100%;
-            height: 300px;
+            height: 200px;
             object-fit: cover;
-            border-bottom: 5px solid #2a3d66;
         }
 
         .card-content {
-            padding: 25px;
-            background-color: #ffffff;
+            padding: 20px;
         }
 
-        .card-content h2 {
-            font-size: 1.8rem;
-            color: #2a3d66;
-            margin-bottom: 15px;
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.6em;
+            color: #34495e;
         }
 
         .card-content p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
+            font-size: 1em;
+            color: #7f8c8d;
+            margin-top: 10px;
         }
 
-        .card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+        /* Skills Section */
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .skills-item {
+            width: 120px;
+            height: 120px;
+            background-color: #ecf0f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-item i {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+
+        /* Contact Form */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #34495e;
         }
 
         footer {
+            background-color: #2c3e50;
+            color: white;
             text-align: center;
-            margin-top: 40px;
-            font-size: 1rem;
-            color: #2a3d66;
+            padding: 20px;
         }
 
         footer a {
+            color: #ecf0f1;
             text-decoration: none;
-            color: #2a3d66;
             font-weight: bold;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
+
     </style>
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
-        <h1>My Elegant Log</h1>
-        <p>A place to share memories, experiences, and beautiful moments.</p>
+        <h1>Your Name</h1>
+        <p>Creative Developer | Designer | Problem Solver</p>
     </header>
 
-    <div class="card-container">
-        <!-- Card 1 -->
-        <div class="card">
-            <img src="/Users/seerat/Downloads/oats.jpg" alt="Elegant Image 1">
-            <div class="card-content">
-                <h2>In the pink</h2>
-                <p> Oats with berries cannot resist myself to make it as my first meal goes through my mouth</p>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate developer with a love for creating elegant and functional web applications. I have experience in a variety of technologies, including HTML, CSS, JavaScript, and more. My goal is to bring ideas to life through code and design.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card-container">
+            <!-- Project 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <div class="card-content">
+                    <h3>Project One</h3>
+                    <p>Details about your first project here. A short description that explains what the project is and what technology you used.</p>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <div class="card-content">
+                    <h3>Project Two</h3>
+                    <p>Details about your second project here. A short description that explains what the project is and what technology you used.</p>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <div class="card-content">
+                    <h3>Project Three</h3>
+                    <p>Details about your third project here. A short description that explains what the project is and what technology you used.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Card 2 -->
-        <div class="card">
-            <img src="/Users/seerat/Downloads/me.jpg" alt="Elegant Image 2">
-            <div class="card-content">
-                <h2>Cozy Vibez</h2>
-                <p> When it's snowing outside everything is covered in white and frezzed.My comfort zone with my fav soft scarf always melts me.</p>
-            </div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skills-item"><i class="fas fa-html5"></i></div>
+            <div class="skills-item"><i class="fas fa-css3-alt"></i></div>
+            <div class="skills-item"><i class="fas fa-js-square"></i></div>
+            <div class="skills-item"><i class="fas fa-react"></i></div>
         </div>
+    </section>
 
-        <!-- Card 3 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x300/2c3e50/ffffff" alt="Elegant Image 3">
-            <div class="card-content">
-                <h2>/h2>
-                <p>The soft glow of the golden hour always brings a sense of calmness. A perfect moment to reflect and appreciate the beauty of the world.</p>
-            </div>
-        </div>
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-        <!-- Card 4 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x300/5b6d7e/ffffff" alt="Elegant Image 4">
-            <div class="card-content">
-                <h2>Cozy Reading Nook</h2>
-                <p>A quiet corner with my favorite books and a warm blanket—ideal for cozy evenings spent reading stories that transport me to another world.</p>
-            </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x300/6b7d8f/ffffff" alt="Elegant Image 5">
-            <div class="card-content">
-                <h2>City Lights at Night</h2>
-                <p>The city never sleeps. The sparkling lights and the buzz of life remind me of all the dreams waiting to be lived.</p>
-            </div>
-        </div>
-    </div>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 My Elegant Log | <a href="#">Privacy Policy</a></p>
+        <p>&copy; 2025 Your Name | <a href="#">Privacy Policy</a></p>
     </footer>
 
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
