@@ -1,109 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Bubble Effect Create Using HTML and CSS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>90's Cursor Effects - Bubbles</title>
+  <style>
+    /* Info box styling */
+    .info {
+      font-family: monospace;
+      position: absolute;
+      line-height: 20px;
+      font-size: 14px;
+      left: 20px;
+      top: 20px;
+    }
 
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
+    /* Bubble Cursor effect styling */
+    /*!
+     * Bubble Cursor.js
+     * - 90's cursors collection
+     * -- https://github.com/tholman/90s-cursor-effects
+     * -- https://codepen.io/tholman/full/qbxxxq/
+     */
+    (function bubblesCursor() {
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+      var cursor = {x: width / 2, y: width / 2};
+      var particles = [];
+      
+      function init() {
+        bindEvents();
+        loop();
+      }
+      
+      // Bind events that are needed
+      function bindEvents() {
+        document.addEventListener('mousemove', onMouseMove);
+        window.addEventListener('resize', onWindowResize);
+      }
+      
+      function onWindowResize(e) {
+        width = window.innerWidth;
+        height = window.innerHeight;
+      }
+      
+      function onMouseMove(e) {
+        cursor.x = e.clientX;
+        cursor.y = e.clientY;
+        
+        addParticle(cursor.x, cursor.y);
+      }
+      
+      function addParticle(x, y) {
+        var particle = new Particle();
+        particle.init(x, y);
+        particles.push(particle);
+      }
+      
+      function updateParticles() {
+        // Update
+        for (var i = 0; i < particles.length; i++) {
+          particles[i].update();
         }
-
-        .box {
-            width: 500px;
-            height: 500px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            /* background-color: #00ff00; */
-            background-image: linear-gradient(#00ff00,#00ff11,#11ee10);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+        // Remove dead particles
+        for (var i = particles.length - 1; i >= 0; i--) {
+          if (particles[i].lifeSpan < 0) {
+            particles[i].die();
+            particles.splice(i, 1);
+          }
         }
+      }
+      
+      function loop() {
+        requestAnimationFrame(loop);
+        updateParticles();
+      }
+      
+      /**
+       * Particles
+       */
+      function Particle() {
+        this.lifeSpan = 250; //ms
+        this.initialStyles = {
+          "position": "absolute",
+          "display": "block",
+          "pointerEvents": "none",
+          "z-index": "10000000",
+          "width": "5px",
+          "height": "5px",
+          "will-change": "transform",
+          "background": "#e6f1f7",
+          "box-shadow": "-1px 0px #6badd3, 0px -1px #6badd3, 1px 0px #3a92c5, 0px 1px #3a92c5",
+          "border-radius": "3px",
+          "overflow": "hidden"
+        };
 
-        .box h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 24px;
-            justify-content: space-between;
+        // Init, and set properties
+        this.init = function(x, y) {
+          this.velocity = {
+            x: (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 10),
+            y: (-.4 + (Math.random() * -1))
+          };
+          
+          this.position = {x: x - 10, y: y - 10};
+          
+          this.element = document.createElement('span');
+          applyProperties(this.element, this.initialStyles);
+          this.update();
+          
+          document.body.appendChild(this.element);
+        };
+        
+        this.update = function() {
+          this.position.x += this.velocity.x;
+          this.position.y += this.velocity.y;
+          
+          // Update velocities
+          this.velocity.x += (Math.random() < 0.5 ? -1 : 1) * 2 / 75;
+          this.velocity.y -= Math.random() / 600;
+          this.lifeSpan--;
+          
+          this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px,0) scale(" + (0.2 + (250 - this.lifeSpan) / 250) + ")";
         }
-
-        .bubble-box {
-            display: flex;
-            position: absolute;
-            justify-content: space-around;
-            align-items: center;
-            bottom: -20%;
-            width: 100%;
+        
+        this.die = function() {
+          this.element.parentNode.removeChild(this.element);
         }
-
-        .bubble {
-            width: 50px;
-            animation: bubble 5s linear infinite;
+      }
+      
+      /**
+       * Utils
+       */
+      // Applies css `properties` to an element.
+      function applyProperties(target, properties) {
+        for (var key in properties) {
+          target.style[key] = properties[key];
         }
-
-
-        .bubble:nth-child(1) {
-            animation-delay: 2s;
-            width: 40px;
-        }
-
-        .bubble:nth-child(2) {
-            animation-delay: 3s;
-            width: 60px;
-        }
-
-        .bubble:nth-child(3) {
-            animation-delay: 1s;
-            width: 30px;
-        }
-
-        .bubble:nth-child(4) {
-            animation-delay: 5s;
-            width: 35px;
-        }
-
-        .bubble:nth-child(5) {
-            animation-delay: 4s;
-            width: 70px;
-        }
-
-        @keyframes bubble {
-            0% {
-                transform: translateY(0);
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            70% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(-80vh);
-                opacity: 0;
-            }
-        }
-    </style>
+      }
+      
+      init();
+    })();
+  </style>
 </head>
-    <body>
-        <div class="box">
-            <div class="bubble-box">
-                <img src="img/bubble.png" alt="#" class="bubble">
-                <img src="img/bubble.png" alt="#" class="bubble">
-                <img src="img/bubble.png" alt="#" class="bubble">
-                <img src="img/bubble.png" alt="#" class="bubble">
-                <img src="img/bubble.png" alt="#" class="bubble">
-            </div>
-        </div>
-    </body>
+<body>
+  <!-- Info Box with the link to 90's Cursor Effects -->
+  <div class="info">
+    <b><a href="https://github.com/tholman/90s-cursor-effects" target="_blank">90's cursor effects collection</a></b><br>
+    - Bubbles
+  </div>
+</body>
 </html>
