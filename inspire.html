@@ -30,6 +30,7 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         section img {
@@ -62,6 +63,23 @@
             text-decoration: underline;
         }
 
+        .home-button {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .home-button img {
+            width: 60px; /* Adjusted for better visibility */
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .home-button img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -89,7 +107,11 @@
         <p>Afghanistan was a land that even Alexander the Great struggled to conquer. It is said that when Alexander invaded a country, he would send a letter to his mother. By the time the letter reached her, he had already conquered the land. But when he arrived in Afghanistan, he failed to succeed. In response to his mother's inquiry about the delay, Alexander sent her soil from the land and told her to spread it throughout the house. As she did so, many of their loyal soldiers or guards abandoned their allegiance. This incident reflects the cruelty and betrayal that is often associated with Afghanistan’s turbulent history.</p>
 
         <p><a href="https://reflections.live/articles/9558/hari-singh-nalwa-a-heroic-saga-of-bravery-and-leadership-an-article-by-aashmeet-kaur-9560-lhaghexm.html">Learn More ...</a></p>
-        <a href="index.html"><img height="50" src="images/home.png" alt="Home Button"></a>
+        
+        <!-- Home Button -->
+        <div class="home-button">
+            <a href="index.html"><img src="images/home.png" alt="Home Button"></a>
+        </div>
     </section>
 
     <footer>
@@ -97,4 +119,4 @@
     </footer>
 
 </body>
-</html>  
+</html>
