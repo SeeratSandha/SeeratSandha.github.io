@@ -64,29 +64,36 @@
         }
 
         .home-button {
-            margin-top: 30px;
-            display: flex;
+            margin-top: 20px;
+        }
+
+        .home-button a {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
             justify-content: center;
+            background: #C4906C;
+            border-radius: 11px;
+            padding: 12px 40px;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+            transition: background 0.3s ease, transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-button a:hover {
+            background:#58361E;
+            transform: scale(1.05);
         }
 
         .home-button img {
-            width: 90px; /* Adjusted for better visibility */
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.2s ease-in-out;
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
         }
 
-        .home-button img:hover {
-            transform: scale(1.1); /* Slight zoom effect on hover */
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
