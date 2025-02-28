@@ -32,17 +32,33 @@
             margin-top: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
-        .home-button img {
-            width: 90px; /* Adjusted for better visibility */
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.2s ease-in-out;
-            background: none;
+        .home-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
         }
 
-        .home-button img:hover {
-            transform: scale(1.1); /* Slight zoom effect on hover */
+        .home-button a {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #f0f0f0; /* Light background to make it look nice */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease-in-out, background-color 0.3s ease;
         }
+
+        .home-button a:hover {
+        transform: scale(1.1);
+        background-color: #e0e0e0; /* Slight color change on hover */
+        }
+
+        .home-button img {
+        width: 60px; /* Adjusted size for better visibility */
+        height: 60px;
+        object-fit: contain;
+        }
+        .home-button img {
+        
         
     </style>
 </head>
