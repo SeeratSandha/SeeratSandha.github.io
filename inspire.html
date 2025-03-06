@@ -30,6 +30,7 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         section img {
@@ -62,13 +63,37 @@
             text-decoration: underline;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
+        .home-button {
             margin-top: 20px;
         }
+
+        .home-button a {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #6A6363;
+            border-radius: 11px;
+            padding: 12px 40px;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+            transition: background 0.3s ease, transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-button a:hover {
+            background:#333;
+            transform: scale(1.05);
+        }
+
+        .home-button img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -89,6 +114,11 @@
         <p>Afghanistan was a land that even Alexander the Great struggled to conquer. It is said that when Alexander invaded a country, he would send a letter to his mother. By the time the letter reached her, he had already conquered the land. But when he arrived in Afghanistan, he failed to succeed. In response to his mother's inquiry about the delay, Alexander sent her soil from the land and told her to spread it throughout the house. As she did so, many of their loyal soldiers or guards abandoned their allegiance. This incident reflects the cruelty and betrayal that is often associated with Afghanistan’s turbulent history.</p>
 
         <p><a href="https://reflections.live/articles/9558/hari-singh-nalwa-a-heroic-saga-of-bravery-and-leadership-an-article-by-aashmeet-kaur-9560-lhaghexm.html">Learn More ...</a></p>
+        
+        <!-- Home Button -->
+        <div class="home-button">
+            <a href="index.html">Home</a>
+        </div>
     </section>
 
     <footer>
@@ -96,4 +126,4 @@
     </footer>
 
 </body>
-</html>  
+</html>

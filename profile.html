@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Profile</title>
-        <style>
-            body {
-                font-family: Avenir Next Condensed, sans-serif;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-            }
-            h1 {
-                font-family: Chalkboard SE;
-                font-size: 2.5rem;
-                margin-top: 20px;
-            }
-            p {
-                font-size: 1.2rem;
-                margin: 20px 0;
-                width: 80%;
-                max-width: 600px;
-            }
-            img {
-                width: 200px; /* Adjust the size of the image */
-                height: auto;
-                margin-top: 20px;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for better presentation */
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Seerat Sandha</h1>
-        <img src = "images/profile_pic.jpg" alt = "Picture of Seerat Sandha">
-        <p> 🐾 Hi, I’m Seerat Sandha! 🐾 </p>
-        <p>I’m a Computer Software Engineering student who loves learning about new technologies. I aim to become a successful software engineer, and I work hard to keep learning and improving.🦋</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+         body {
+            font-family: Avenir Next Condensed, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        h1 {
+            font-family: Chalkboard SE;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            width: 80%;
+            max-width: 600px;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Home Button Styling */
+        .home-button {
+            margin-top: 20px;
+        }
+
+        .home-button a {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #C4906C;
+            border-radius: 11px;
+            padding: 12px 40px;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+            transition: background 0.3s ease, transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-button a:hover {
+            background:#58361E;
+            transform: scale(1.05);
+        }
+
+        .home-button img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Seerat Sandha</h1>
+    <img src="images/profile_pic.jpg" alt="Picture of Seerat Sandha">
+    <p> 🐾 Hi, I’m Seerat Sandha! 🐾 </p>
+    <p>I’m a Computer Software Engineering student who loves learning about new technologies. I aim to become a successful software engineer, and I work hard to keep learning and improving. 🦋</p>
+   
+    <!-- Home Button -->
+    <div class="home-button">
+        <a href="index.html">Home</a>
+    </div>
+
+</body>
 </html>
