@@ -35,18 +35,25 @@
             img
             {
                 height: 100px;
+                Display: block;
             }
-            img 
+            /* Container for images */
+            .image-container 
             {
-                transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+                display: inline-block;
+                padding: 10px; /* Adjust padding for spacing around the image */
+                background-color: #f0f0f0; /* Default background color */
+                transition: background-color 0.3s ease; /* Smooth transition for background color */
             }
 
-            img:hover 
+/* Hover effect for image container */
+            .image-container:hover 
             {
-                transform: scale(1.1); /* Slightly enlarge the image */
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+                background-color: #FF6347; /* Change to a different color when hovered */
             }
-            td, th
+
+/* Image styling */
+          td, th
             {
                 border: 2px solid black;
                 padding: 15px;
@@ -91,7 +98,8 @@
                 <tr>
                     <th>Iron-man</th>
                     <td>Tony&nbsp;Stark</td>
-                    <td><a href="images/ironman.jpg"><img src="images/ironman.jpg" alt="ironman Pic"></a></td>
+                    <div class="image-container">
+                    <td><a href="images/ironman.jpg"><img src="images/ironman.jpg" alt="ironman Pic"></a></td></div>
                     <td>
                         <ul>
                            <li>superhuman strength</li>
