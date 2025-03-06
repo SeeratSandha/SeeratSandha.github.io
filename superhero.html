@@ -34,19 +34,18 @@
             img {
                 height: 100px;
             }
-
-            /* Container for images */
-            .image-container {
-                display: inline-block;
-                padding: 10px; /* Adjust padding for spacing around the image */
-                background-color: #f0f0f0; /* Default background color */
-                transition: background-color 0.3s ease; /* Smooth transition for background color */
+            .image-column 
+            {
+                background-color: #f0f0f0;  /* Change to your desired background color */
+                padding: 10px;  /* Optional, adjust padding if needed */
+                transition: background-color 0.3s ease;  /* Optional, for smooth background color transition */
             }
 
-            /* Hover effect for image container */
-            .image-container:hover {
-                background-color: #FF6347; /* Change to a different color when hovered */
+            .image-column:hover
+            {
+                background-color: #FF6347;  /* Hover effect with a different color */
             }
+            
 
             /* Image styling */
             td, th {
@@ -92,7 +91,7 @@
                 <tr>
                     <th>Iron-man</th>
                     <td>Tony&nbsp;Stark</td>
-                    <td>
+                    <td class="image-column">
                         <div class="image-container">
                             <a href="images/ironman.jpg"><img src="images/ironman.jpg" alt="ironman Pic"></a>
                         </div>
