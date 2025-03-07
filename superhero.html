@@ -6,20 +6,33 @@
         <link rel="stylesheet" href="css/main.css">
 
         <style>
-            body {
-                background-color: #F3F1E5;
+            body 
+            {
+                max-width: 90%;
+                margin: 20px auto;
+                padding: 20px;
+                border: 5px solid #1B2C30;
+                border-radius: 15px;
+                background-color: #F9F9F9;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
             }
 
-            h1 {
+            h1
+            {
+                background: linear-gradient(90deg, #1B2C30, #4A707A); /* Gradient effect */
+                color: white;
+                padding: 15px;
+                border-radius: 10px;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+            }
+
+            h2, h3
+            {
                 color: #1B2C30;
-                text-align: center;
             }
 
-            h2, h3 {
-                color: #1B2C30;
-            }
-
-            #superman {
+            #superman 
+            {
                 color: red;
             }
 
@@ -42,13 +55,14 @@
                 background-color: #FFFFFF;
             }
 
-            table {
-                border-collapse: collapse;
-                margin: 50px auto;
-                width: 80%;
+            table 
+            {
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+                border-radius: 10px; /* Rounded corners */
+                overflow: hidden; /* Ensures border-radius applies properly */
             }
-
-            th {
+            th 
+            {
                 background-color: #FFFFFF;
                 font-size: 18px;
             }
@@ -57,7 +71,8 @@
                 color: #000000;
             }
 
-            table ul {
+            table ul
+            {
                 color: #000000;
             }
             /* Hover effect for table rows */
