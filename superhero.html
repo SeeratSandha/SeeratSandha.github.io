@@ -92,9 +92,11 @@
                 transition: background-color 0.3s ease;  /* Smooth transition */
             }
             /* Hover effect for table cells with gradient */
-            th:hover, td:hover 
+            /* Hover effect for table cells with gradient, excluding the image column */
+            th:not(.image-column):hover, 
+            td:not(.image-column):hover 
             {
-                background: linear-gradient(90deg, #BFD5E2, #D8E5EA); /* Adjusted gradient on hover */
+                background: linear-gradient(90deg, #64777C, #D8E5EA); /* Adjusted gradient on hover */
                 transition: background 0.3s ease; /* Smooth transition */
             }
         </style>
