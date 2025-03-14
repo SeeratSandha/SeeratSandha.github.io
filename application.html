@@ -5,16 +5,11 @@
     <title>Tile Match Game</title>
     <link rel="stylesheet" href="css/application.css">
     <style>
-        header
-         {
+        header {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
         }
 
         body {
@@ -23,6 +18,7 @@
             background-image: url("images/dargapn.png");
             background-repeat: repeat;
         }
+
         .game-container {
             display: flex;
             flex-direction: column;
@@ -30,22 +26,34 @@
             justify-content: center;
             margin-top: 20px;
         }
+
         .game-image {
-            width: 50%;
-            height: 50%;
+            width: 300px;
+            height: 200px;
             margin-bottom: 10px;
         }
+
         iframe {
             width: 80vw;
             height: 45vw;
             border: none;
         }
-       .game-image 
-        {
-            width: 200px;  /* Adjust width */
-            height: 200px;  /* Adjust height */
-            margin-bottom: 10px;
-            
+
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #444;
+            color: white;
         }
     </style>
 </head>
@@ -53,9 +61,52 @@
     <header>
         <h1>Welcome to Tile Match Game</h1>
     </header>
+
     <div class="game-container">
-        <img class="game-image" src="images/welcome_gamepic.png" alt="Welcome Image" width ="100" height ="150">
+        <img class="game-image" src="images/welcome_gamepic.png" alt="Welcome Image">
         <iframe src="https://cloud.onlinegames.io/games/2025/unity/tile-match/index-og.html"></iframe>
     </div>
+
+    <h2>Overview</h2>
+    <p>Tile Match is a fun and engaging puzzle game where you need to match 3 identical tiles to clear them. 
+       Some tiles are locked beneath others, and you must free them by clearing the ones on top first. 
+       You have a space for 7 tiles—fill it with different tiles, and you lose! 
+       The challenge is to strategize and match wisely.</p>
+
+    <h2>How to Play</h2>
+    <p>To play Tile Match, simply tap on a tile to move it to your selection space. 
+       When you collect three matching tiles, they disappear, creating more room. 
+       Be careful! If all 7 slots are filled with different tiles, you lose. 
+       Use strategy to clear the board and win the game!</p>
+
+    <h2>Tile Match Boosters</h2>
+    <table>
+        <tr>
+            <th>Booster</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>➕ Extra Slot</td>
+            <td>Gives you one more slot to hold tiles.</td>
+        </tr>
+        <tr>
+            <td>🔀 Shuffle</td>
+            <td> Rearrange the tiles to open up new possibilities.</td>
+        </tr>
+        <tr>
+            <td>💡 Hint</td>
+            <td>Instantly finds a match for you.</td>
+        </tr>
+        <tr>
+            <td>⏪ Undo</td>
+            <td>Rewinds your last move, perfect for fixing mistakes.</td>
+        </tr>
+    </table>
+
+    <h2>Game Images</h2>
+    <img class="game-image" src="images/demo_game.png" alt="Gameplay Screenshot 1">
+    <img class="game-image" src="images/demo_game1.png" alt="Gameplay Screenshot 2">
+    <img class="game-image" src="images/demo_game2.png" alt="Gameplay Screenshot 3">
+
 </body>
 </html>
