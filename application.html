@@ -5,6 +5,18 @@
     <title>Tile Match Game</title>
     <link rel="stylesheet" href="css/application.css">
     <style>
+        header
+         {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
         body {
             text-align: center;
             font-family: Arial, sans-serif;
@@ -20,7 +32,7 @@
         }
         .game-image {
             width: 50%;
-            height: auto;
+            height: 50%;
             margin-bottom: 10px;
         }
         iframe {
@@ -31,9 +43,11 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to Tile Match Game</h1>
+    </header>
     <div class="game-container">
         <img class="game-image" src="images/welcome_gamepic.png" alt="Welcome Image">
-        <h1 class="title">Tile Match Game</h1>
         <iframe src="https://cloud.onlinegames.io/games/2025/unity/tile-match/index-og.html"></iframe>
     </div>
 </body>
