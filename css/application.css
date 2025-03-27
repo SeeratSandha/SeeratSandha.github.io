@@ -86,19 +86,29 @@
             background-color: #444;
             color: white;
         }
-        .how-to-play {
-           width: 80%;
-           max-width: 600px;
-           margin: 20px auto;
-           text-align: left;
-       }
+        .how-to-play-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
 
-       h3 {
-           margin-top: 20px;
-       }
-       
-       p {
-           margin-bottom: 15px;
-           font-size: 16px;
-           line-height: 1.5;
-       }
+.step {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #007BFF; /* Blue left border for better organization */
+    background: #f9f9f9;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 5px 0;
+}
