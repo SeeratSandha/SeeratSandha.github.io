@@ -86,49 +86,19 @@
             background-color: #444;
             color: white;
         }
-        .how-to-play-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px; /* Space between steps and content */
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-}
+        .how-to-play {
+           width: 80%;
+           max-width: 600px;
+           margin: 20px auto;
+           text-align: left;
+       }
 
-.steps {
-    flex: 1;
-    text-align: right;
-    padding-right: 15px; /* Space between steps and text */
-}
-
-.steps-content {
-    flex: 3;
-    text-align: left;
-}
-
-.steps h3 {
-    margin: 20px 0;
-}
-
-.steps-content p {
-    margin: 20px 0;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-    .how-to-play-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .steps, .steps-content {
-        text-align: center;
-    }
-
-    .steps {
-        padding-right: 0;
-    }
-}
+       h3 {
+           margin-top: 20px;
+       }
+       
+       p {
+           margin-bottom: 15px;
+           font-size: 16px;
+           line-height: 1.5;
+       }
