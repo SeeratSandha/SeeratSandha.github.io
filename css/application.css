@@ -86,3 +86,29 @@
             background-color: #444;
             color: white;
         }
+        .how-to-play-container {
+           display: flex;
+           justify-content: center;
+           align-items: flex-start;
+           margin: 20px auto;
+           max-width: 80%;
+       }
+
+       .steps 
+       {
+           flex: 1;
+           text-align: left;
+           font-size: 20px;
+           font-weight: bold;
+           padding-right: 30px;
+           color: #ff8fab;
+       }
+
+       .steps-content 
+        {
+           flex: 2;
+           text-align: left;
+           font-size: 18px;
+           color: #555;
+              
+        }
