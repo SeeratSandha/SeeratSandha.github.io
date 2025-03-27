@@ -90,25 +90,37 @@
            display: flex;
            justify-content: center;
            align-items: flex-start;
+           gap: 20px; /* Adds spacing between steps and content */
            margin: 20px auto;
-           max-width: 80%;
-       }
+           width: 80%;
+`       }
 
-       .steps 
-       {
+       .steps {
            flex: 1;
            text-align: left;
-           font-size: 20px;
-           font-weight: bold;
-           padding-right: 30px;
-           color: #ff8fab;
        }
 
-       .steps-content 
-        {
-           flex: 2;
+       .steps-content {
+           flex: 3;
            text-align: left;
-           font-size: 18px;
-           color: #555;
-              
-        }
+       }
+
+       .steps h3 {
+           margin-bottom: 20px; /* Adds space between each step */
+       }
+
+       .steps-content p {
+           margin-bottom: 20px; /* Adds space between each paragraph */
+           font-size: 16px;
+       }
+
+       @media (max-width: 768px) {
+           .how-to-play-container {
+            flex-direction: column;
+           align-items: center;
+           }
+
+       .steps, .steps-content 
+       {
+               text-align: center;
+    }
