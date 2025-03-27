@@ -1,8 +1,21 @@
- header {
+
+       @font-face
+        {
+          font-family: EXO2-Medium;
+          src: url("fonts/Exo2-Medium.ttf");
+        }
+         @font-face
+        {
+          font-family: ShadowsIntoLight-Regular;
+          src: url("fonts/ShadowsIntoLight-Regular.ttf");
+        }
+       header 
+        {
             background-color: #ff8fab;
             color: #fff;
             padding: 20px;
             text-align: center;
+            font-family: ShadowsIntoLight-Regular;
         }
         h2
         {
@@ -20,7 +33,7 @@
 
         body {
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family: EXO2-Medium;
             background-repeat: repeat;
         }
 
