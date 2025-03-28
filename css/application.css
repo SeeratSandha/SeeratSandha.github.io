@@ -96,15 +96,10 @@
 .step {
     margin-bottom: 20px;
     padding: 10px;
-    border-left: 4px solid #007BFF; /* Blue left border for better organization */
+    border-left: 4px solid #9d4edd; /* Blue left border for better organization */
     background: #f9f9f9;
     padding-left: 15px;
     border-radius: 5px;
-}
-.step:hover {
-    background: #e3f2fd; /* Light blue background */
-    transform: translateX(5px); /* Moves the box slightly to the right */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
 h3 {
