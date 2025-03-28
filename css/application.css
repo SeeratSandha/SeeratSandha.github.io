@@ -14,6 +14,11 @@
           margin:20px;
        
        }
+       .game-logo:hover
+       {
+           transform: scale(1.1);  
+           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+       }
        header 
         {
             margin: 20px; 
@@ -105,6 +110,11 @@
            background: #f9f9f9;
            padding-left: 15px;
            border-radius: 5px;
+       }
+       .step:hover
+       {
+           background-color: #e0f7fa; 
+           border-left: 4px solid #ff8fab; 
        }
 
        h3 
