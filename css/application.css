@@ -21,11 +21,12 @@
             font-size: 42px;
             color:  #ff8fab;
         }
-      header h1:hover {
-    color: #ff80b5;  /* Lighter shade of pink on hover */
-    transform: scale(1.05);  /* Slight zoom-in effect */
-    transition: color 0.3s ease, transform 0.3s ease;  /* Smooth transition */
-}
+      header h1:hover
+       {
+           color: #ff80b5;  /* Lighter shade of pink on hover */
+           transform: scale(1.05);  /* Slight zoom-in effect */
+           transition: color 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+       }
 
         h2
         {
