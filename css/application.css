@@ -12,12 +12,6 @@
         .game-logo
        {
           margin:20px;
-       
-       }
-       .game-logo:hover
-       {
-           transform: scale(1.1);  
-           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
        }
        header 
         {
@@ -27,6 +21,11 @@
             font-size: 42px;
             color:  #ff8fab;
         }
+       header:hover
+       {
+           color: #ff80b5;  /* Lighter shade of pink on hover */
+           transform: scale(1.05);  /* Slight zoom-in effect */
+       }
         h2
         {
             color: #ff8fab;
