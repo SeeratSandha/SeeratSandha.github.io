@@ -112,6 +112,6 @@
            line-height: 1.5;
            margin: 5px 0;
        }
-       img {
+       .game-image {
            border: 4px solid #97A0A0; /* Blue border */
        }
