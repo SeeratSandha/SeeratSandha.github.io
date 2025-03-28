@@ -9,11 +9,17 @@
           font-family: ShadowsIntoLightRegular;
           src: url("fonts/ShadowsIntoLight-Regular.ttf");
         }
+        .game-logo
+       {
+          margin:20px;
+       
+       }
        header 
         {
             margin: 20px; 
             text-align: center;
             font-family: ShadowsIntoLightRegular;
+            font-size: 32px;
             color:  #ff8fab;
         }
         h2
