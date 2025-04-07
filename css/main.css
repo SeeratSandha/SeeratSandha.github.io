@@ -1,32 +1,11 @@
-/* Apply background color only to amuse.html */
+
 body.amuse {
   background-color: #fff8df; /* light custom beige as an example */
 }
 
-/* Style the heading on amuse.html */
 body.amuse h1 {
-  color: #8a2be2; /* custom purple */
-  font-size: 36px;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-/* Style images on amuse.html */
-body.amuse img {
-  width: 200px;
-  border-radius: 10px;
-  opacity: 0.9;
-  filter: drop-shadow(2px 2px 4px #555);
-}
-
-/* Table styling on amuse.html */
-body.amuse table {
-  border-collapse: collapse;
-  width: 100%;
-  background-color: #fefbd8;
-}
-
-/* Table row hover effect for amuse.html */
-body.amuse tr:hover {
-  background-color: #f5deb3;
+  color: #8a2be2;           /* Sets the text color to a custom purple */
+  font-size: 36px;          /* Makes the heading large */
+  font-weight: bold;        /* Makes the text bold */
+  text-decoration: underline; /* Underlines the text */
 }
