@@ -166,3 +166,62 @@ body.inspire {
             height: 30px;
             margin-left: 10px;
         }
+body.profile {
+            font-family: Avenir Next Condensed, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #ffffff;
+        }
+      body.profile  h1 {
+            font-family: Chalkboard SE;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+      body.profile  p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            width: 80%;
+            max-width: 600px;
+        }
+     body.profile   img {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Home Button Styling */
+      body.profile  .home-button {
+            margin-top: 20px;
+        }
+
+       body.profile .home-button a {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #C4906C;
+            border-radius: 11px;
+            padding: 12px 40px;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+            transition: background 0.3s ease, transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+       body.profile .home-button a:hover {
+            background:#58361E;
+            transform: scale(1.05);
+        }
+
+       body.profile .home-button img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
