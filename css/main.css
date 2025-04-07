@@ -47,28 +47,33 @@ body.homepage table {
   width: 80%;
   margin: 0 auto;
   border-collapse: collapse;
-  background-color: #ffffffcc;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Pure white for clarity */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 body.homepage table th,
 body.homepage table td {
-  border: 1px solid #6b705c;
-  padding: 15px;
+  border: 1px solid #ddd;
+  padding: 16px;
   text-align: left;
   font-size: 16px;
+  color: #333;
 }
 
 body.homepage table th {
-  background-color: #6b705c;
-  color: white;
+  background-color: #b2967d; /* Warm elegant brown */
+  color: #fff;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 body.homepage table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #f9f5f0; /* Soft beige for alt rows */
 }
 
 body.homepage table tr:hover {
-  background-color: #f3d5b5;
+  background-color: #efe3d8; /* Light creamy brown highlight */
+  transition: background-color 0.3s ease;
 }
