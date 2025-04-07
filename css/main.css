@@ -19,7 +19,8 @@ body.amuse h1 {
  
   
 /* Apply a nice background */
-body.homepage {
+body.homepage 
+   {
   background: linear-gradient(to right, #f0f8ff, #e6e6fa); /* soft blue to lavender */
   font-family: Arial, sans-serif;
   padding: 20px;
