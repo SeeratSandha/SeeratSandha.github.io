@@ -9,3 +9,7 @@ body.amuse h1 {
   font-weight: bold;        /* Makes the text bold */
   text-decoration: underline; /* Underlines the text */
 }
+.float-right {
+  float: right;
+  margin-left: 20px; /* optional: adds space between image and text */
+}
