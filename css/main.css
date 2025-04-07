@@ -13,11 +13,12 @@ body.amuse h1 {
   float: right;
   margin-left: 20px; /* optional: adds space between image and text */
 }
- body.amuse img.funny-img {
+ body.amuse img.funny-img
+{
   float: right;
   margin: 60px;          /* adds space around the image */
  
-  
+ }
 body.homepage 
    {
    background: linear-gradient(to right, #f0f8ff, #e6e6fa); /* soft blue to lavender */
