@@ -29,7 +29,7 @@ body.homepage
 
 body.homepage h1 
 {
-  color: #b2967d; /* Indigo */
+  color: ##013C65; /* Indigo */
   text-align: center;
   font-size: 42px;
   margin-bottom: 30px;
@@ -53,14 +53,14 @@ body.homepage table {
 
 body.homepage table th,
 body.homepage table td {
-  border: 1px solid #cccccc;
+  border: 1px solid #FFD67D;
   padding: 15px;
   text-align: left;
   font-size: 16px;
 }
 
 body.homepage table th {
-  background-color: #b2967d;
+  background-color: ##013C65;
   color: white;
   text-transform: uppercase;
 }
@@ -70,5 +70,5 @@ body.homepage table tr:nth-child(even) {
 }
 
 body.homepage table tr:hover {
-  background-color: #f3d5b5;
+  background-color: #FFEFCC;
 }
