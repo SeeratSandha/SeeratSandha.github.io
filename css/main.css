@@ -78,3 +78,91 @@ body.homepage table tr:hover {
   transition: background-color 0.3s ease;
 }
 
+body.inspire {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        body.inspire header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        body.inspire header h1 {
+            margin: 0;
+        }
+
+       body.inspire section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+       body.inspire section img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+       body.inspire h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        body.inspire p {
+            font-size: 1em;
+            color: #555;
+            margin: 10px 0;
+        }
+
+       body.inspire a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+      body.inspire  a:hover {
+            text-decoration: underline;
+        }
+
+       body.inspire .home-button {
+            margin-top: 20px;
+        }
+
+       body.inspire .home-button a {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #6A6363;
+            border-radius: 11px;
+            padding: 12px 40px;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+            transition: background 0.3s ease, transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+      body.inspire  .home-button a:hover {
+            background:#333;
+            transform: scale(1.05);
+        }
+
+       body.inspire .home-button img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
