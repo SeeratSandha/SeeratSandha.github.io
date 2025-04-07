@@ -13,3 +13,10 @@ body.amuse h1 {
   float: right;
   margin-left: 20px; /* optional: adds space between image and text */
 }
+ body.amuse img.funny-img {
+  float: right;
+  margin: 20px;          /* adds space around the image */
+  border-radius: 12px;   /* optional: rounded corners */
+  width: 300px;          /* optional: control size */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* optional: drop shadow */
+}
