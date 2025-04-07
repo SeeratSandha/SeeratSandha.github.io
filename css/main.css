@@ -18,16 +18,16 @@ body.amuse h1 {
   margin: 60px;          /* adds space around the image */
  
   
-/* Apply a nice background */
 body.homepage 
    {
-  background: linear-gradient(to right, #f0f8ff, #e6e6fa); /* soft blue to lavender */
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
+   background: linear-gradient(to right, #f0f8ff, #e6e6fa); /* soft blue to lavender */
+   font-family: Arial, sans-serif;
+   padding: 20px;
+   }
 
-/* Style the h1 heading */
-body.homepage h1 {
+
+body.homepage h1 
+{
   color: #b2967d; /* Indigo */
   text-align: center;
   font-size: 42px;
