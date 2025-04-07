@@ -21,7 +21,7 @@ body.amuse h1 {
  }
 body.homepage 
    {
-   background: linear-gradient(to right, #f0f8ff, #e6e6fa); /* soft blue to lavender */
+   background: #e7d8c9 /* soft blue to lavender */
    font-family: Arial, sans-serif;
    padding: 20px;
    }
@@ -29,7 +29,7 @@ body.homepage
 
 body.homepage h1 
 {
-  color: ##013C65; /* Indigo */
+  color: #6b705c; /* Indigo */
   text-align: center;
   font-size: 42px;
   margin-bottom: 30px;
@@ -53,14 +53,14 @@ body.homepage table {
 
 body.homepage table th,
 body.homepage table td {
-  border: 1px solid #FFD67D;
+  border: 1px solid #6b705c;
   padding: 15px;
   text-align: left;
   font-size: 16px;
 }
 
 body.homepage table th {
-  background-color: ##013C65;
+  background-color: #6b705c;
   color: white;
   text-transform: uppercase;
 }
@@ -70,5 +70,5 @@ body.homepage table tr:nth-child(even) {
 }
 
 body.homepage table tr:hover {
-  background-color: #FFEFCC;
+  background-color: #f3d5b5;
 }
