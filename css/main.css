@@ -15,11 +15,9 @@ body.amuse h1 {
 }
  body.amuse img.funny-img {
   float: right;
-  margin: 20px;          /* adds space around the image */
-  border-radius: 12px;   /* optional: rounded corners */
-  width: 300px;          /* optional: control size */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* optional: drop shadow */
-}
+  margin: 60px;          /* adds space around the image */
+ 
+  
 /* Apply a nice background */
 body.homepage {
   background: linear-gradient(to right, #f0f8ff, #e6e6fa); /* soft blue to lavender */
@@ -29,7 +27,7 @@ body.homepage {
 
 /* Style the h1 heading */
 body.homepage h1 {
-  color: #4b0082; /* Indigo */
+  color: #b2967d; /* Indigo */
   text-align: center;
   font-size: 42px;
   margin-bottom: 30px;
@@ -41,8 +39,7 @@ body.homepage h1 {
   display: block;
   margin: 0 auto 30px auto;
   width: 150px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
 }
 
 /* Style the table */
@@ -63,7 +60,7 @@ table td {
 }
 
 table th {
-  background-color: #6a5acd;
+  background-color: #b2967d;
   color: white;
   text-transform: uppercase;
 }
