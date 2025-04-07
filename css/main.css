@@ -1,68 +1,32 @@
-/* 1. Background for entire page */
+/* Apply background color only to amuse.html */
 body.amuse {
-  background-color: #f0f8ff; /* light blue custom color using hex */
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
+  background-color: #fff8dc; /* light custom beige as an example */
 }
 
-/* 2. Style for all h1 elements */
-h1.title {
-  color: #003366;
-  font-size: 2.5em;
+/* Style the heading on amuse.html */
+body.amuse h1 {
+  color: #8a2be2; /* custom purple */
+  font-size: 36px;
   font-weight: bold;
   text-decoration: underline;
-  text-align: center;
 }
 
-/* 3. Style for images */
-img {
-  width: 150px;
+/* Style images on amuse.html */
+body.amuse img {
+  width: 200px;
   border-radius: 10px;
-  filter: drop-shadow(2px 2px 4px gray);
+  opacity: 0.9;
+  filter: drop-shadow(2px 2px 4px #555);
 }
 
-/* 4. Style for table */
-table {
-  width: 100%;
+/* Table styling on amuse.html */
+body.amuse table {
   border-collapse: collapse;
-  margin-top: 20px;
+  width: 100%;
+  background-color: #fefbd8;
 }
 
-/* 5. Table header styling */
-th {
-  background-color: #003366;
-  color: white;
-  padding: 10px;
-}
-
-/* 6. Table data cell styling */
-td {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-/* 7. Style for links inside the table */
-td a {
-  color: #006699;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* 8. Hover effect for links */
-td a:hover {
-  color: #ff6600;
-  text-decoration: underline;
-}
-
-/* 9. Responsive image rule */
-@media (max-width: 600px) {
-  img {
-    width: 100px;
-  }
-}
-
-/* 10. Extra rule just to meet requirement */
-table tr:hover {
-  background-color: #e6f2ff;
+/* Table row hover effect for amuse.html */
+body.amuse tr:hover {
+  background-color: #f5deb3;
 }
