@@ -226,13 +226,13 @@ body.profile {
             margin-left: 10px;
         }
 
-.test {
+body.test {
   background: #f3f4f6; /* light gray */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
 }
 
-.test h1 {
+body.test h1 {
   color: #4b5563; /* dark slate */
   font-size: 40px;
   text-align: center;
@@ -240,7 +240,7 @@ body.profile {
   text-shadow: 1px 1px 2px #bbb;
 }
 
-.test table {
+body.test table {
   width: 90%;
   margin: 0 auto;
   border-collapse: collapse;
@@ -250,8 +250,8 @@ body.profile {
   overflow: hidden;
 }
 
-.test table th,
-.test table td {
+body.test table th,
+body.test table td {
   border: 1px solid #ddd;
   padding: 16px;
   font-size: 16px;
@@ -259,27 +259,27 @@ body.profile {
   text-align: left;
 }
 
-.test table th {
+body.test table th {
   background-color: #6b7280; /* slate dark */
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.test table tr:nth-child(even) {
+body.test table tr:nth-child(even) {
   background-color: #f9fafb; /* lightest gray */
 }
 
-.test table tr:hover {
+body.test table tr:hover {
   background-color: #e5e7eb;
   transition: background-color 0.2s ease-in-out;
 }
 
-.test a {
+body.test a {
   color: #2563eb; /* bright blue */
   text-decoration: none;
 }
 
-.test a:hover {
+body.test a:hover {
   text-decoration: underline;
 }
