@@ -233,7 +233,7 @@ body.test {
 }
 
 body.test h1 {
-  color: #450920; /* dark slate */
+  color: #d2b7e5; /* dark slate */
   font-size: 40px;
   text-align: center;
   margin-bottom: 40px;
@@ -260,7 +260,7 @@ body.test table td {
 }
 
 body.test table th {
-  background-color: #450920; /* slate dark */
+  background-color: #d2b7e5; /* slate dark */
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
