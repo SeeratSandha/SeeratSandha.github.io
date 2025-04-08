@@ -21,7 +21,7 @@ body.amuse h1 {
  }
 body.homepage 
    {
-   background: #dedbd2 /* soft blue to lavender */
+   background: #7f5539 /* soft blue to lavender */
    font-family: Arial, sans-serif;
    padding: 20px;
    }
@@ -29,7 +29,7 @@ body.homepage
 
 body.homepage h1 
 {
-  color: #b2967d; /* Indigo */
+  color: #7f5539; /* Indigo */
   text-align: center;
   font-size: 42px;
   margin-bottom: 30px;
