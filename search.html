@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,31 +32,28 @@
 </head>
 <body>
   <h1>Academic Research Search</h1>
-  <form action="https://www.google.com/search" method="GET">
+  <form action="https://www.google.com/search" method="GET" onsubmit="return buildQuery()">
     
     <fieldset>
       <legend>Search Query</legend>
-      <label for="q">Enter search keywords:</label>
-      <input type="text" id="q" name="q" placeholder="e.g., climate change effects on agriculture" required>
+      <label for="query">Enter search keywords:</label>
+      <input type="text" id="query" placeholder="e.g., renewable energy policy" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Search Term Location</legend>
+      <label><input type="radio" name="location" value="" checked> Anywhere on the page</label>
+      <label><input type="radio" name="location" value="intitle:"> In the title</label>
+      <label><input type="radio" name="location" value="inurl:"> In the URL</label>
+      <label><input type="radio" name="location" value="intext:"> In the page text</label>
+      <label><input type="radio" name="location" value="inanchor:"> In anchor/link text</label>
     </fieldset>
 
     <fieldset>
       <legend>Domain Filters</legend>
-      <label><input type="checkbox" name="as_sitesearch" value=".edu"> Limit to .edu sites</label>
-      <label><input type="checkbox" name="as_sitesearch" value=".org"> Limit to .org sites</label>
-      <label><input type="checkbox" name="as_sitesearch" value="scholar.google.com"> Limit to Google Scholar</label>
-    </fieldset>
-
-    <fieldset>
-      <legend>File Type</legend>
-      <label for="as_filetype">Select a file type:</label>
-      <select name="as_filetype" id="as_filetype">
-        <option value="">Any</option>
-        <option value="pdf">PDF</option>
-        <option value="doc">DOC</option>
-        <option value="ppt">PPT</option>
-        <option value="xls">XLS</option>
-      </select>
+      <label><input type="checkbox" name="site" value=".edu"> Limit to .edu sites</label>
+      <label><input type="checkbox" name="site" value=".org"> Limit to .org sites</label>
+      <label><input type="checkbox" name="site" value="scholar.google.com"> Limit to Google Scholar</label>
     </fieldset>
 
     <fieldset>
@@ -80,7 +75,25 @@
       <label><input type="radio" name="safe" value="off"> Turn off SafeSearch</label>
     </fieldset>
 
+    <input type="hidden" name="q" id="finalQuery">
     <button type="submit">Search Google</button>
   </form>
+
+  <script>
+    function buildQuery() {
+      const query = document.getElementById("query").value.trim();
+      const location = document.querySelector("input[name='location']:checked").value;
+      const siteCheckboxes = document.querySelectorAll("input[name='site']:checked");
+
+      let finalQuery = location ? `${location}${query}` : query;
+
+      siteCheckboxes.forEach(cb => {
+        finalQuery += ` site:${cb.value}`;
+      });
+
+      document.getElementById("finalQuery").value = finalQuery;
+      return true;
+    }
+  </script>
 </body>
 </html>
