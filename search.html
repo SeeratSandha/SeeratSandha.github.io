@@ -1,51 +1,86 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Google BACS200 Search</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <h1>Google Search</h1>
-        <form action="https://www.google.com/search" method="GET" target="_blank">
-            <fieldset id="toplevelset">
-                <div>
-                    <label for="searchbox">Search String</label>
-                    <input type="text" name="q" id="searchbox">
-                </div>
-                <div>
-                    <label for="site">Select a Site</label>
-                    <select name="as_sitesearch" id="site">
-                        <option value="">--All Websites--</option>
-                        <option value="zybooks.com">Zybooks</option>
-                        <option value="w3schools.com">W3Schools</option>
-                        <option value="html.spec.whatwg.org">HTML Living Standard</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="phrase">Select a Subject (optional)</label>
-                    <select name="as_epq" id="phrase">
-                        <option value=""></option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                    </select>
-                </div>
-                <fieldset>
-                    <div>
-                        <input type="checkbox" name="newwindow" value="1" id="checkwindow">
-                        <label for="checkwindow">Open Links in New Window</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="pws" value="0" id="checkpersonal">
-                        <label for="checkpersonal">Exclude Personal Results</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="as_occt" value="url" id="checkurl">
-                        <label for="checkurl">Limit Search to URLs</label>
-                    </div>
-                </fieldset>
-            </fieldset>
-            <input type="submit" value="Search">
-        </form>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Academic Research Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f7f9fc;
+    }
+    fieldset {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+    label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    select, input[type="text"], textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Academic Research Search</h1>
+  <form action="https://www.google.com/search" method="GET">
+    
+    <fieldset>
+      <legend>Search Query</legend>
+      <label for="q">Enter search keywords:</label>
+      <input type="text" id="q" name="q" placeholder="e.g., climate change effects on agriculture" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Domain Filters</legend>
+      <label><input type="checkbox" name="as_sitesearch" value=".edu"> Limit to .edu sites</label>
+      <label><input type="checkbox" name="as_sitesearch" value=".org"> Limit to .org sites</label>
+      <label><input type="checkbox" name="as_sitesearch" value="scholar.google.com"> Limit to Google Scholar</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>File Type</legend>
+      <label for="as_filetype">Select a file type:</label>
+      <select name="as_filetype" id="as_filetype">
+        <option value="">Any</option>
+        <option value="pdf">PDF</option>
+        <option value="doc">DOC</option>
+        <option value="ppt">PPT</option>
+        <option value="xls">XLS</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Time Range</legend>
+      <label for="tbs">Filter by date:</label>
+      <select name="tbs" id="tbs">
+        <option value="">Anytime</option>
+        <option value="qdr:h">Past hour</option>
+        <option value="qdr:d">Past 24 hours</option>
+        <option value="qdr:w">Past week</option>
+        <option value="qdr:m">Past month</option>
+        <option value="qdr:y">Past year</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Safe Search</legend>
+      <label><input type="radio" name="safe" value="active" checked> Turn on SafeSearch</label>
+      <label><input type="radio" name="safe" value="off"> Turn off SafeSearch</label>
+    </fieldset>
+
+    <button type="submit">Search Google</button>
+  </form>
+</body>
 </html>
