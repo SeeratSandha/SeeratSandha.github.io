@@ -3,24 +3,29 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  font-size: 18px; /* Bigger font */
+  font-size: 20px; /* Increased font size */
+  line-height: 1.8; /* More line spacing for readability */
 }
 
 header {
   background-color: #333;
   color: white;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
+  font-size: 26px;
 }
 
 #profile-pic {
   border-radius: 50%;
-  margin-top: 10px;
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 nav {
   background-color: #444;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -32,18 +37,31 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  font-size: 22px;
 }
 
 section {
   background-color: white;
-  margin: 90px auto;
-  padding: 60px;
-  max-width: 1000px;
+  margin: 100px auto; /* More vertical spacing */
+  padding: 80px;       /* Bigger padding for box feel */
+  max-width: 1100px;   /* Wider content area */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: adds slight depth */
+  font-size: 22px;     /* Bigger content text */
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
