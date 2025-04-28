@@ -47,12 +47,18 @@
                 color: purple;
             }
 
-            img 
-            {
-                max-width: 100%;
+            img {
+                width: 100px;
                 height: auto;
             }
 
+/* Make images smaller on very small screens */
+            @media (max-width: 600px) {
+            img {
+                width: 70px;
+                height: auto;
+                }
+            }
             /* Image styling */
             td, th {
                 border: 2px solid black;
