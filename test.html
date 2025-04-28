@@ -8,25 +8,35 @@
         <style>
     /* Add this */
     @media (max-width: 600px) {
-    table {
+    table, thead, tbody, th, td, tr {
+        display: block;
         width: 100%;
-        font-size: 16px; /* easy to read */
-        table-layout: auto; /* allow flexible column widths */
     }
 
-    th, td {
-        padding: 10px; /* more breathing space inside cells */
-        font-size: 14px;
-        word-break: break-word; /* make sure long URLs/text break nicely */
-        text-align: left; /* better for readability, not center */
-        vertical-align: top; /* make contents start from top */
+    thead tr {
+        display: none; /* Hide table headers on small screens */
     }
 
-    a {
-        display: block; /* so link doesn't squeeze horizontally */
-        word-break: break-word;
+    tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    td, th {
+        text-align: left;
+        padding: 10px;
+        font-size: 16px;
+        position: relative;
+    }
+
+    td::before, th::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
     }
 }
+        
 </style>
     </head>
     <body class="test">
