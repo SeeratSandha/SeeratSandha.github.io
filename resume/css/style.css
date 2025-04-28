@@ -13,8 +13,8 @@ body {
   font-family: 'Playwriter', sans-serif;
   background-color: #f2f2f2;
   margin: 0;
-  padding: 0 15px; /* Add small padding to avoid touching screen edges */
-  font-size: 20px;
+  padding: 0 10px; /* Add small padding to avoid touching screen edges */
+  font-size: 15px;
   line-height: 1.8;
 }
 
