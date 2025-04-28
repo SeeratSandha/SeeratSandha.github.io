@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tile Match Game</title>
-    <link rel="stylesheet" href="css/application.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tile Match Game</title>
+  <link rel="stylesheet" href="css/application.css" />
 </head>
 <body>
-    <header>
-        <img class="game-logo" src="images/welcome_gamepic.png" alt="Welcome Image">
-        <h1><strong>Welcome to Tile Match Game</strong></h1>
-    </header>
+  <header>
+    <img class="game-logo" src="images/welcome_gamepic.png" alt="Welcome Image" />
+    <h1><strong>Welcome to Tile Match Game</strong></h1>
+  </header>
 
+  <main>
     <div class="game-container">
-        
-        <iframe src="https://cloud.onlinegames.io/games/2025/unity/tile-match/index-og.html"></iframe>
+      <iframe src="https://cloud.onlinegames.io/games/2025/unity/tile-match/index-og.html" title="Tile Match Game"></iframe>
     </div>
 
-    <h2>Overview</h2>
-    <p>Step into the world of Tile Match, where strategy, focus, and quick thinking come together to create the ultimate puzzle experience! This game isn’t just about matching tiles—it’s about mastering the challenge of clearing the board before you run out of space.
+    <section class="overview">
+      <h2>Overview</h2>
+      <p>Step into the world of Tile Match, where strategy, focus, and quick thinking come together to create the ultimate puzzle experience! Match 3 identical tiles to remove them, but beware—only 7 slots are available. Think ahead, strategize your moves, and clear the board!</p>
+    </section>
 
-        Your goal is simple yet thrilling: match 3 identical tiles to remove them from play. But there’s a twist—some tiles are locked beneath others, and you’ll need to clear the top layers first before accessing them. Every move matters, and with only 7 slots available, filling them up with unmatched tiles means GAME OVER!
+    <section class="how-to-play">
+      <h2>How to Play</h2>
+      <div class="how-to-play-container">
+        <div class="step">
+          <h3>Step 1: Selecting Tiles</h3>
+          <p>Tap on a tile to move it into your selection space. You can hold up to 7 tiles at a time, so choose wisely!</p>
+        </div>
+        <div class="step">
+          <h3>Step 2: Making Matches</h3>
+          <p>Collect three identical tiles to make them disappear. Plan ahead to avoid filling all 7 slots!</p>
+        </div>
+        <div class="step">
+          <h3>Step 3: Unlocking Hidden Tiles</h3>
+          <p>Clear the top layers to reveal hidden tiles underneath.</p>
+        </div>
+        <div class="step">
+          <h3>Step 4: Winning the Game</h3>
+          <p>Clear all tiles on the board without filling your slots. As levels progress, the puzzles become trickier!</p>
+        </div>
+      </div>
+    </section>
 
-        Think ahead, strategize your matches, and experience the satisfaction of clearing the board. With increasing difficulty, exciting tile designs, and a test of your puzzle-solving skills, Tile Match promises hours of addictive fun!
-</p>
-
-    <h2>How to Play</h2>
-<div class="how-to-play-container">
-    <div class="step">
-        <h3>Step 1: Selecting Tiles</h3>
-        <p>Tap on a tile to move it into your selection space at the bottom of the screen. You can hold up to 7 tiles at a time, so choose wisely!</p>
-    </div>
-
-    <div class="step">
-        <h3>Step 2: Making Matches</h3>
-        <p>Once you collect three identical tiles, they will automatically disappear, freeing up space for new selections. Plan ahead—if your selection space fills up with 7 unmatched tiles, the game is over!</p>
-    </div>
-
-    <div class="step">
-        <h3>Step 3: Unlocking Hidden Tiles</h3>
-        <p>Not all tiles are immediately available! Some are stacked beneath others, and you’ll need to clear the top layers first to access them.</p>
-    </div>
-
-    <div class="step">
-        <h3>Step 4: Winning the Game</h3>
-        <p>Match and clear all the tiles on the board without filling up your selection space. As levels progress, patterns become trickier, requiring strategy, memory, and logic.</p>
-    </div>
-</div>
-    <h2>Tile Match Boosters</h2>
-    <table>
-        <tr>
+    <section class="boosters">
+      <h2>Tile Match Boosters</h2>
+      <table>
+        <thead>
+          <tr>
             <th>Booster</th>
             <th>Description</th>
-        </tr>
-        <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <td>➕ Extra Slot</td>
             <td>Gives you one more slot to hold tiles.</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>🔀 Shuffle</td>
-            <td> Rearrange the tiles to open up new possibilities.</td>
-        </tr>
-        <tr>
+            <td>Rearranges tiles to open up new possibilities.</td>
+          </tr>
+          <tr>
             <td>💡 Hint</td>
             <td>Instantly finds a match for you.</td>
-        </tr>
-        <tr>
-            <td>↩️ Undo</td> 
-            <td>Rewinds your last move, perfect for fixing mistakes.</td>
-        </tr>
-    </table>
+          </tr>
+          <tr>
+            <td>↩️ Undo</td>
+            <td>Rewinds your last move to fix mistakes.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-    <h2>Game Images</h2>
-    <img class="game-image" src="images/demo_game.png" alt="Gameplay Screenshot 1">
-    <img class="game-image" src="images/demo_game1.png" alt="Gameplay Screenshot 2">
-    <img class="game-image" src="images/demo_game2.png" alt="Gameplay Screenshot 3">
-
+    <section class="gallery">
+      <h2>Game Images</h2>
+      <img class="game-image" src="images/demo_game.png" alt="Gameplay Screenshot 1" />
+      <img class="game-image" src="images/demo_game1.png" alt="Gameplay Screenshot 2" />
+      <img class="game-image" src="images/demo_game2.png" alt="Gameplay Screenshot 3" />
+    </section>
+  </main>
 </body>
 </html>
