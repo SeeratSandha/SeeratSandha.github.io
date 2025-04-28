@@ -1,74 +1,103 @@
-@font-face
-        {
-          font-family: playwriter;
-          src: url("PlaywriteAUSA-VariableFont_wght.ttf");
-        }
+@font-face {
+  font-family: 'Playwriter';
+  src: url("PlaywriteAUSA-VariableFont_wght.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: playwriter;
+  font-family: 'Playwriter', sans-serif;
   background-color: #f2f2f2;
   margin: 0;
-  padding: 0;
-  font-size: 20px; /* Increased font size */
-  line-height: 1.8; /* More line spacing for readability */
+  padding: 0 15px; /* Add small padding to avoid touching screen edges */
+  font-size: 20px;
+  line-height: 1.8;
 }
 
 header {
-  font-family: playwriter;
   background-color: #9c89b8;
   color: white;
-  padding: 30px;
+  padding: 30px 15px;
   text-align: center;
-  font-size: 26px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .profile-img {
   border-radius: 50%;
-  margin-top: 15px;
+  margin-top: 20px;
   width: 150px;
   height: 150px;
   object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav {
   background-color: #b7a9cb;
   padding: 15px;
-  text-align: center;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 20px;
+  margin: 10px 15px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 section {
   background-color: white;
-  margin: 100px auto; /* More vertical spacing */
-  padding: 80px;       /* Bigger padding for box feel */
-  max-width: 1100px;   /* Wider content area */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: adds slight depth */
-  font-size: 22px;     /* Bigger content text */
+  margin: 60px auto;
+  padding: 50px 30px;
+  max-width: 1100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
   margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
 }
