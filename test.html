@@ -5,6 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Testing Page</title>
         <link rel="stylesheet" href="css/main.css">
+        <style>
+    /* Add this */
+    @media (max-width: 600px) {
+        table {
+            width: 100%;
+            font-size: 16px; /* slightly bigger for better mobile reading */
+        }
+
+        th, td {
+            padding: 8px; /* make cells tighter */
+            font-size: 14px; /* increase from small default font size */
+            word-break: break-word; /* wrap long links/text nicely */
+        }
+
+        body {
+            font-size: 16px; /* make body text bigger */
+            padding: 10px;
+        }
+    }
+</style>
     </head>
     <body class="test">
         <h1>Testing Page</h1>
