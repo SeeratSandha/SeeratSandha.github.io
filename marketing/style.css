@@ -1,44 +1,42 @@
-/* Base Styles */
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #fffaf5;
   color: #333;
-  padding: 1rem;
+  padding: 0;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
+/* Header (Image Only) */
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
 
 .header-logo {
-  max-width: 220px;
-  width: 100%;
+  max-width: 90%;
   height: auto;
-  margin-bottom: 1rem;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 8rem;
-  color: #710c0c;
-}
-
-header p {
-  font-size: 4rem;
-  color: #710c0c;
-  margin-top: 0.5rem;
 }
 
 /* Navigation */
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
   margin: 1.5rem 0;
 }
 
 nav a {
   text-decoration: none;
   color: #a94442;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -48,30 +46,63 @@ nav a:hover {
 
 /* Main Content */
 main {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 h2 {
+  font-size: 2rem;
   color: #710c0c;
   border-bottom: 2px solid #f8d7da;
   padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+p, li {
+  font-size: 1.2rem;
 }
 
 ul {
   list-style-type: disc;
-  padding-left: 1.5rem;
+  padding-left: 1.8rem;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color:#710c0c;
+  padding: 1.5rem;
+  background-color: #710c0c;
+  color: #fffaf5;
+  font-size: 1rem;
   border-radius: 8px;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
 }
