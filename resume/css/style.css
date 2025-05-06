@@ -1,285 +1,103 @@
-
-body.amuse {
-  background-color: #fff8df; /* light custom beige as an example */
+@font-face {
+  font-family: 'Playwriter';
+  src: url("PlaywriteAUSA-VariableFont_wght.ttf") format("truetype");
 }
 
-body.amuse h1 {
-  color: #8a2be2;           /* Sets the text color to a custom purple */
-  font-size: 36px;          /* Makes the heading large */
-  font-weight: bold;        /* Makes the text bold */
-  text-decoration: underline; /* Underlines the text */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-.float-right {
-  float: right;
-  margin-left: 20px; /* optional: adds space between image and text */
+
+body {
+  font-family: 'Playwriter', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0 10px; /* Add small padding to avoid touching screen edges */
+  font-size: 15px;
+  line-height: 1.8;
 }
- body.amuse img.funny-img
-{
-  float: right;
-  margin: 60px;          /* adds space around the image */
- 
- }
-body.homepage 
-   {
-   background: #7f5539 /* soft blue to lavender */
-   font-family: Arial, sans-serif;
-   padding: 20px;
-   }
 
-
-body.homepage h1 
-{
-  color: #7f5539; /* Indigo */
+header {
+  background-color: #9c89b8;
+  color: white;
+  padding: 30px 15px;
   text-align: center;
-  font-size: 42px;
-  margin-bottom: 30px;
-  text-shadow: 1px 1px 2px #ccc;
 }
 
-body.homepage img.logo-img {
-  display: block;
-  margin: 0 auto 30px auto;
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+  margin-top: 20px;
   width: 150px;
+  height: 150px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Style the table */
-body.homepage table {
-  width: 80%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background-color: #ffffff; /* Pure white for clarity */
-  border-radius: 8px;
-  overflow: hidden;
+nav {
+  background-color: #b7a9cb;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+section {
+  background-color: white;
+  margin: 60px auto;
+  padding: 50px 30px;
+  max-width: 1100px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
 }
 
-body.homepage table th,
-body.homepage table td {
-  border: 1px solid #ddd;
-  padding: 16px;
-  text-align: left;
-  font-size: 16px;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: #333;
 }
 
-body.homepage table th {
-  background-color: #7f5539; /* Warm elegant brown */
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+ul {
+  padding-left: 20px;
 }
 
-body.homepage table tr:nth-child(even) {
-  background-color: #f9f5f0; /* Soft beige for alt rows */
-}
-
-body.homepage table tr:hover {
-  background-color: #efe3d8; /* Light creamy brown highlight */
-  transition: background-color 0.3s ease;
-}
-
-body.inspire {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        body.inspire header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        body.inspire header h1 {
-            margin: 0;
-        }
-
-       body.inspire section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-       body.inspire section img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 8px;
-        }
-
-       body.inspire h2 {
-            color: #333;
-            font-size: 1.5em;
-            margin-top: 20px;
-        }
-
-        body.inspire p {
-            font-size: 1em;
-            color: #555;
-            margin: 10px 0;
-        }
-
-       body.inspire a {
-            text-decoration: none;
-            color: #0066cc;
-            font-weight: bold;
-        }
-
-      body.inspire  a:hover {
-            text-decoration: underline;
-        }
-
-       body.inspire .home-button {
-            margin-top: 20px;
-        }
-
-       body.inspire .home-button a {
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #6A6363;
-            border-radius: 11px;
-            padding: 12px 40px;
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: bold;
-            font-family: "Open Sans", sans-serif;
-            transition: background 0.3s ease, transform 0.2s ease-in-out;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-      body.inspire  .home-button a:hover {
-            background:#333;
-            transform: scale(1.05);
-        }
-
-       body.inspire .home-button img {
-            width: 30px;
-            height: 30px;
-            margin-left: 10px;
-        }
-body.profile {
-            font-family: Avenir Next Condensed, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background-color: #ffffff;
-        }
-      body.profile  h1 {
-            font-family: Chalkboard SE;
-            font-size: 2.5rem;
-            margin-top: 20px;
-        }
-      body.profile  p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-            width: 80%;
-            max-width: 600px;
-        }
-     body.profile   img {
-            width: 200px;
-            height: auto;
-            margin-top: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        /* Home Button Styling */
-      body.profile  .home-button {
-            margin-top: 20px;
-        }
-
-       body.profile .home-button a {
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #C4906C;
-            border-radius: 11px;
-            padding: 12px 40px;
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: bold;
-            font-family: "Open Sans", sans-serif;
-            transition: background 0.3s ease, transform 0.2s ease-in-out;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-       body.profile .home-button a:hover {
-            background:#58361E;
-            transform: scale(1.05);
-        }
-
-       body.profile .home-button img {
-            width: 30px;
-            height: 30px;
-            margin-left: 10px;
-        }
-
-body.test {
-  background: #f3f4f6; /* light gray */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
-}
-
-body.test h1 {
-  color: #6247aa; /* dark slate */
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 40px;
-  text-shadow: 1px 1px 2px #bbb;
-}
-
-body.test table {
-  width: 90%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background-color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-body.test table th,
-body.test table td {
-  border: 1px solid #ddd;
-  padding: 16px;
-  font-size: 16px;
-  color: #374151; /* slate gray */
-  text-align: left;
-}
-
-body.test table th {
-  background-color: #6247aa; /* slate dark */
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-body.test table tr:nth-child(even) {
-  background-color: #f9fafb; /* lightest gray */
-}
-
-body.test table tr:hover {
-  background-color: #e5e7eb;
-  transition: background-color 0.2s ease-in-out;
-}
-
-body.test a {
-  color: #2563eb; /* bright blue */
-  text-decoration: none;
-}
-
-body.test a:hover {
-  text-decoration: underline;
+li {
+  margin-bottom: 10px;
 }

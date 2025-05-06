@@ -32,7 +32,7 @@ body.homepage h1
   color: #7f5539; /* Indigo */
   text-align: center;
   font-size: 42px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-shadow: 1px 1px 2px #ccc;
 }
 
@@ -80,7 +80,7 @@ body.homepage table tr:hover {
 
 body.inspire {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -241,7 +241,7 @@ body.test h1 {
 }
 
 body.test table {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
   background-color: #ffffff;
@@ -254,7 +254,7 @@ body.test table th,
 body.test table td {
   border: 1px solid #ddd;
   padding: 16px;
-  font-size: 16px;
+  font-size: 10px;
   color: #374151; /* slate gray */
   text-align: left;
 }
