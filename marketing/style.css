@@ -8,13 +8,6 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 1rem 1rem 2rem;
-  background-color: #710c0c;
-  border-radius: 10px;
-}
 
 .header-logo {
   max-width: 220px;
@@ -25,12 +18,12 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 8rem;
   color: #710c0c;
 }
 
 header p {
-  font-size: 1.1rem;
+  font-size: 4rem;
   color: #710c0c;
   margin-top: 0.5rem;
 }
