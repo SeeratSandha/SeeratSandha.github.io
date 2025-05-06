@@ -106,3 +106,18 @@ footer {
     font-size: 0.9rem;
   }
 }
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
