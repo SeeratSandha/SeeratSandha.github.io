@@ -12,7 +12,7 @@ body {
 header {
   text-align: center;
   padding: 1rem 1rem 2rem;
-  background-color: #f8d7da;
+  background-color: #710c0c;
   border-radius: 10px;
 }
 
@@ -26,12 +26,12 @@ header {
 header h1 {
   margin: 0;
   font-size: 2rem;
-  color: #a94442;
+  color: #710c0c;
 }
 
 header p {
   font-size: 1.1rem;
-  color: #5c2a29;
+  color: #710c0c;
   margin-top: 0.5rem;
 }
 
@@ -64,7 +64,7 @@ section {
 }
 
 h2 {
-  color: #a94442;
+  color: #710c0c;
   border-bottom: 2px solid #f8d7da;
   padding-bottom: 0.5rem;
 }
@@ -78,7 +78,7 @@ ul {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #f8d7da;
+  background-color:#710c0c;
   border-radius: 8px;
   margin-top: 2rem;
 }
